@@ -1,8 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server'
 import { createClient } from '@/utils/supabase/server'
 
-export const runtime = 'edge'
-
 function normalizeRedirectUrl(rawUrl: string | undefined | null): string | null {
   if (!rawUrl) return null
   const trimmed = rawUrl.trim()
